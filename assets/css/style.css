@@ -70,6 +70,25 @@ background-size: cover;
   content: '\00BB';
   display: inline;
 }
+.progress-body{background-color:#ffffff;
+  border-radius:0px;}
+.progress-bar-content{background-color:#000000;
+}
+.bar-web{
+  width:96%
+  }
+.bar-internet{
+  width:70%
+  }
+.bar-responsive{
+  width:100%
+  }
+.bar-wordpress{
+  width:60%
+  }
+.project-client-row{display:flex;
+  justify-content: space-around;}
+
 
 .portfolio{
   background: #F9F4F4;
