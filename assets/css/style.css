@@ -6,7 +6,7 @@
 
 header{
 height:  100vh;
-background: url("../images/header-bg-desktop.png") no-repeat center center fixed;
+background: url("../images/header-bg-desktop.png") no-repeat center center;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -21,6 +21,9 @@ background-size: cover;
   right: 0;
   background: rgba(17, 17, 17, 0.8);
 }
+.nav-padding{
+  left: 8rem;
+}
 .nav-right{
   margin-left: auto;
   margin-right: 10rem!important;
@@ -30,10 +33,43 @@ background-size: cover;
   padding-right: 2rem!important;
 }
 .header-title{
+  max-width: 40%;
+  position: absolute;
+  top: 40%;
+  left: 10rem;
   margin: auto;
-  z-index: -99;
+  z-index: 99;
+  color: rgba(255, 255,255, 0.5);
 }
+.header-title h4{
+  color: #ffffff;
+}
+.header-title a{
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  border-radius: 5px;
 
+}
+.about{
+  background-color: #F5F2F2;
+  padding:4rem 6rem ;
+}
+.exp, .education{
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding-top: 2rem;
+  width: 90%!important;
+}
+.exp-item, .education-item{
+  display: flex;
+  justify-content: center;
+}
+.exp span::after{
+  content: '\00BB';
+  display: inline;
+}
 
 .portfolio{
   background: #F9F4F4;
