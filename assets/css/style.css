@@ -11,19 +11,17 @@ background-size: 100% 100%;
 overflow: hidden;
 }
 .header-overlay{
-  position: absolute;
+  height: 100%;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background: rgba(17, 17, 17, 0.8);
 }
-.nav-padding{
-  left: 8rem;
-}
+
 .nav-right{
   margin-left: auto;
-  margin-right: 10rem!important;
+  margin-right: 0!important;
 }
 .link-white{
   color: #ffffff;
@@ -33,8 +31,6 @@ overflow: hidden;
   max-width: 40%;
   position: absolute;
   top: 40%;
-  left: 10rem;
-  margin: auto;
   z-index: 99;
   color: rgba(255, 255,255, 0.5);
 }
@@ -51,13 +47,17 @@ overflow: hidden;
 }
 .about{
   background-color: #F5F2F2;
-  padding:4rem 6rem ;
+  padding:4rem auto;
+}
+.exp-education{
+  padding-bottom: 1rem;
 }
 .exp, .education{
   border: 1px solid #000000;
   border-radius: 5px;
   padding-top: 2rem;
-  width: 90%!important;
+  padding-bottom: 1rem;
+  width: auto!important;
 }
 .exp-item, .education-item{
   display: flex;
@@ -68,8 +68,13 @@ overflow: hidden;
   display: inline;
 }
 .skills{width:65%}
+.progress{
+  height: 20px;
+}
 .progress-body{background-color:#ffffff;
-  border-radius:0px;}
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius:0px;
+  margin-bottom: 0.5rem;}
 .progress-bar-content{background-color:#000000;
 }
 .bar-web{
@@ -94,11 +99,93 @@ padding-top:2rem;}
   margin-left: auto;
   margin-right: auto;
 }
-.port-div img{
-  width: 100%;
+.port-div:nth-child(odd){
+  padding-right:4rem ;
 }
-.port-tittle{
+.port-div:nth-child(even){
+  padding-left: 4rem;
+}
+.port-div-cont{
+  padding-bottom: 4rem;
+}
+.port-div-cont img{
+  width: 100%!important;
+  height: auto;
+  display: block;
+}
+
+.port-title{
   position: absolute;
+  bottom: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.port-title h4 span{
+  font-size: 18px;
+  padding: .5rem 1rem;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+
+.recent-blogs{
+
+  background: #F5F2F2;
+}
+.carousel-row{
+  display: flex;
+  justify-content: space-between;
+}
+.carousel-cap{
+  text-align: center;
+}
+
+.contact{
+  background-color: #FFFFFF;
+  padding: 2rem auto;
+  color: #000000;
+}
+.contact h4{
+  text-align: center;
+  font-weight: 900;
+}
+.contact p{
+  text-align: center;
+}
+.contact-info-form{
+  padding-top: 2rem;
+}
+.email, .phone{
+  padding-bottom: 1.5rem;
+}
+.social-icons{
+  padding-top: 1rem;
+}
+.social-icons li{
+  display: inline;
+  list-style-type: none;
+  padding-right: 1.5rem;
+}
+
+.cont-input, .cont-textarea, .cont-submit{
+  padding-bottom: 1rem;
+}
+.cont-input>input, .cont-textarea>textarea{
+  width: 100%;
+  border: .5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 0.5rem 0;
+  padding-left: 0.5rem;
+}
+.cont-submit>input{
+  border-radius: 0;
+  background-color: #000000;
+  padding: 0.5rem 1rem;
+  color: #FFFFFF;
+  border: 1px solid #000000;
 }
 
 .footer{background-color:#0B0B0B;
